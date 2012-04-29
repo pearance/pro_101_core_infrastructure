@@ -122,6 +122,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: administer files
+  $permissions['administer files'] = array(
+    'name' => 'administer files',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'file_entity',
+  );
+
   // Exported permission: administer image styles
   $permissions['administer image styles'] = array(
     'name' => 'administer image styles',
@@ -246,6 +255,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'boxes',
   );
 
+  // Exported permission: edit file
+  $permissions['edit file'] = array(
+    'name' => 'edit file',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'file_entity',
+  );
+
   // Exported permission: revert revisions
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
@@ -256,6 +274,20 @@ function pro_101_core_infrastructure_user_default_permissions() {
       3 => 'support',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: view file
+  $permissions['view file'] = array(
+    'name' => 'view file',
+    'roles' => array(
+      0 => 'anonymous user',
+      1 => 'assistant',
+      2 => 'authenticated user',
+      3 => 'developer',
+      4 => 'professional',
+      5 => 'support',
+    ),
+    'module' => 'file_entity',
   );
 
   // Exported permission: view own unpublished content
