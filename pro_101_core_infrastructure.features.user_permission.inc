@@ -122,15 +122,6 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: administer image styles
-  $permissions['administer image styles'] = array(
-    'name' => 'administer image styles',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'image',
-  );
-
   // Exported permission: administer menu
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
