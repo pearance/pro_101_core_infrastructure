@@ -4,4 +4,4 @@
  * Code for the Pro 101 Core Infrastructure feature.
  */
 
-include_once('pro_101_core_infrastructure.features.inc');
+include_once 'pro_101_core_infrastructure.features.inc';

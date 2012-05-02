@@ -10,7 +10,7 @@
 function pro_101_core_infrastructure_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: access administration pages
+  // Exported permission: access administration pages.
   $permissions['access administration pages'] = array(
     'name' => 'access administration pages',
     'roles' => array(
@@ -19,7 +19,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: access all views
+  // Exported permission: access all views.
   $permissions['access all views'] = array(
     'name' => 'access all views',
     'roles' => array(
@@ -28,7 +28,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'views',
   );
 
-  // Exported permission: access content
+  // Exported permission: access content.
   $permissions['access content'] = array(
     'name' => 'access content',
     'roles' => array(
@@ -42,7 +42,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: access content overview
+  // Exported permission: access content overview.
   $permissions['access content overview'] = array(
     'name' => 'access content overview',
     'roles' => array(
@@ -54,7 +54,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: access contextual links
+  // Exported permission: access contextual links.
   $permissions['access contextual links'] = array(
     'name' => 'access contextual links',
     'roles' => array(
@@ -66,7 +66,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'contextual',
   );
 
-  // Exported permission: access site in maintenance mode
+  // Exported permission: access site in maintenance mode.
   $permissions['access site in maintenance mode'] = array(
     'name' => 'access site in maintenance mode',
     'roles' => array(
@@ -76,7 +76,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: access site reports
+  // Exported permission: access site reports.
   $permissions['access site reports'] = array(
     'name' => 'access site reports',
     'roles' => array(
@@ -85,7 +85,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: administer actions
+  // Exported permission: administer actions.
   $permissions['administer actions'] = array(
     'name' => 'administer actions',
     'roles' => array(
@@ -94,7 +94,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: administer blocks
+  // Exported permission: administer blocks.
   $permissions['administer blocks'] = array(
     'name' => 'administer blocks',
     'roles' => array(
@@ -104,7 +104,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'block',
   );
 
-  // Exported permission: administer boxes
+  // Exported permission: administer boxes.
   $permissions['administer boxes'] = array(
     'name' => 'administer boxes',
     'roles' => array(
@@ -113,7 +113,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'boxes',
   );
 
-  // Exported permission: administer content types
+  // Exported permission: administer content types.
   $permissions['administer content types'] = array(
     'name' => 'administer content types',
     'roles' => array(
@@ -122,7 +122,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: administer menu
+  // Exported permission: administer menu.
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
     'roles' => array(
@@ -131,7 +131,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'menu',
   );
 
-  // Exported permission: administer modules
+  // Exported permission: administer modules.
   $permissions['administer modules'] = array(
     'name' => 'administer modules',
     'roles' => array(
@@ -140,7 +140,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: administer nodes
+  // Exported permission: administer nodes.
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
     'roles' => array(
@@ -149,7 +149,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: administer site configuration
+  // Exported permission: administer site configuration.
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',
     'roles' => array(
@@ -158,7 +158,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: administer software updates
+  // Exported permission: administer software updates.
   $permissions['administer software updates'] = array(
     'name' => 'administer software updates',
     'roles' => array(
@@ -167,7 +167,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: administer taxonomy
+  // Exported permission: administer taxonomy.
   $permissions['administer taxonomy'] = array(
     'name' => 'administer taxonomy',
     'roles' => array(
@@ -177,7 +177,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
-  // Exported permission: administer themes
+  // Exported permission: administer themes.
   $permissions['administer themes'] = array(
     'name' => 'administer themes',
     'roles' => array(
@@ -187,7 +187,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: administer views
+  // Exported permission: administer views.
   $permissions['administer views'] = array(
     'name' => 'administer views',
     'roles' => array(
@@ -196,7 +196,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'views',
   );
 
-  // Exported permission: block IP addresses
+  // Exported permission: block IP addresses.
   $permissions['block IP addresses'] = array(
     'name' => 'block IP addresses',
     'roles' => array(
@@ -205,7 +205,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: bypass node access
+  // Exported permission: bypass node access.
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
     'roles' => array(
@@ -214,7 +214,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete revisions
+  // Exported permission: delete revisions.
   $permissions['delete revisions'] = array(
     'name' => 'delete revisions',
     'roles' => array(
@@ -225,7 +225,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: edit boxes
+  // Exported permission: edit boxes.
   $permissions['edit boxes'] = array(
     'name' => 'edit boxes',
     'roles' => array(
@@ -237,7 +237,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'boxes',
   );
 
-  // Exported permission: revert revisions
+  // Exported permission: revert revisions.
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
     'roles' => array(
@@ -249,7 +249,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: view own unpublished content
+  // Exported permission: view own unpublished content.
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
     'roles' => array(
@@ -261,7 +261,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: view revisions
+  // Exported permission: view revisions.
   $permissions['view revisions'] = array(
     'name' => 'view revisions',
     'roles' => array(
@@ -273,7 +273,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: view the administration theme
+  // Exported permission: view the administration theme.
   $permissions['view the administration theme'] = array(
     'name' => 'view the administration theme',
     'roles' => array(
