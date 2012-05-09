@@ -122,6 +122,13 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: administer fieldgroups.
+  $permissions['administer fieldgroups'] = array(
+    'name' => 'administer fieldgroups',
+    'roles' => array(),
+    'module' => 'field_group',
+  );
+
   // Exported permission: administer menu.
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
@@ -235,6 +242,13 @@ function pro_101_core_infrastructure_user_default_permissions() {
       3 => 'support',
     ),
     'module' => 'boxes',
+  );
+
+  // Exported permission: rel_build_registration.
+  $permissions['rel_build_registration'] = array(
+    'name' => 'rel_build_registration',
+    'roles' => array(),
+    'module' => 'rel',
   );
 
   // Exported permission: revert revisions.

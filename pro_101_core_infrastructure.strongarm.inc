@@ -136,5 +136,12 @@ function pro_101_core_infrastructure_strongarm() {
   $strongarm->value = 1;
   $export['preprocess_js'] = $strongarm;
 
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rel_build_registration_ignore';
+  $strongarm->value = 'admin/*';
+  $export['rel_build_registration_ignore'] = $strongarm;
+
   return $export;
 }
