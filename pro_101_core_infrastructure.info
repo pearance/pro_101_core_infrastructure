@@ -15,6 +15,7 @@ dependencies[] = context_layouts
 dependencies[] = contextual
 dependencies[] = features
 dependencies[] = field_group
+dependencies[] = in_field_labels
 dependencies[] = libraries
 dependencies[] = link
 dependencies[] = list
