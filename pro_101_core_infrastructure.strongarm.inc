@@ -118,6 +118,13 @@ function pro_101_core_infrastructure_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'rel_build_form_registration';
+  $strongarm->value = 0;
+  $export['rel_build_form_registration'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'rel_build_registration_ignore';
   $strongarm->value = 'admin/*';
   $export['rel_build_registration_ignore'] = $strongarm;
@@ -132,7 +139,6 @@ function pro_101_core_infrastructure_strongarm() {
     'dblog' => 1,
     'field_ui' => 1,
     'devel' => 1,
-    'devel_themer' => 1,
     'pro_101_dev_tools' => 1,
     'views_ui' => 1,
   );
@@ -179,7 +185,6 @@ function pro_101_core_infrastructure_strongarm() {
     'dblog' => 0,
     'field_ui' => 0,
     'devel' => 0,
-    'devel_themer' => 0,
     'pro_101_dev_tools' => 0,
     'views_ui' => 0,
   );
