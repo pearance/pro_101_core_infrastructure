@@ -263,6 +263,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: use tadaa.
+  $permissions['use tadaa'] = array(
+    'name' => 'use tadaa',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'tadaa',
+  );
+
   // Exported permission: view own unpublished content.
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
