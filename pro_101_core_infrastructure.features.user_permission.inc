@@ -161,6 +161,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'name' => 'administer site configuration',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'system',
   );
@@ -268,6 +269,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'name' => 'use tadaa',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'tadaa',
   );
