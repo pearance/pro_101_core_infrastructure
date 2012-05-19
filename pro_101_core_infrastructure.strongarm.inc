@@ -115,6 +115,13 @@ function pro_101_core_infrastructure_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'page_cache_maximum_age';
+  $strongarm->value = '300';
+  $export['page_cache_maximum_age'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'rel_build_form_registration';
   $strongarm->value = 0;
   $export['rel_build_form_registration'] = $strongarm;
