@@ -83,13 +83,6 @@ function pro_101_core_infrastructure_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'error_level';
-  $strongarm->value = '0';
-  $export['error_level'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'jquery_update_compression_type';
   $strongarm->value = 'min';
   $export['jquery_update_compression_type'] = $strongarm;
@@ -104,16 +97,20 @@ function pro_101_core_infrastructure_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_admin_theme';
-  $strongarm->value = '1';
-  $export['node_admin_theme'] = $strongarm;
+  $strongarm->name = 'locale_custom_strings_en';
+  $strongarm->value = array(
+    '' => array(
+      'Select an environment' => 'Select a site mode',
+    ),
+  );
+  $export['locale_custom_strings_en'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'page_cache_maximum_age';
-  $strongarm->value = '300';
-  $export['page_cache_maximum_age'] = $strongarm;
+  $strongarm->name = 'node_admin_theme';
+  $strongarm->value = '1';
+  $export['node_admin_theme'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -155,6 +152,7 @@ function pro_101_core_infrastructure_strongarm() {
     'preprocess_css' => 0,
     'preprocess_js' => 0,
     'maintenance_mode' => 1,
+    'error_level' => '2',
   );
   $export['tadaa_development_variables'] = $strongarm;
 
@@ -170,8 +168,8 @@ function pro_101_core_infrastructure_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'tadaa_environments';
   $strongarm->value = array(
-    'development' => 'Development',
-    'production' => 'Production',
+    'development' => 'Maintenance (Offline)',
+    'production' => 'Live (Online)',
   );
   $export['tadaa_environments'] = $strongarm;
 
@@ -201,6 +199,7 @@ function pro_101_core_infrastructure_strongarm() {
     'page_compression' => 1,
     'preprocess_css' => 1,
     'maintenance_mode' => 0,
+    'error_level' => '0',
   );
   $export['tadaa_production_variables'] = $strongarm;
 

@@ -81,6 +81,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'name' => 'access site reports',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'system',
   );
@@ -161,7 +162,6 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'name' => 'administer site configuration',
     'roles' => array(
       0 => 'developer',
-      1 => 'support',
     ),
     'module' => 'system',
   );
@@ -173,6 +173,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'system',
+  );
+
+  // Exported permission: administer string overrides.
+  $permissions['administer string overrides'] = array(
+    'name' => 'administer string overrides',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'stringoverrides',
   );
 
   // Exported permission: administer taxonomy.
