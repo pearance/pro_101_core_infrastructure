@@ -31,7 +31,6 @@ dependencies[] = taxonomy
 dependencies[] = token
 dependencies[] = update
 dependencies[] = views
-features[content_menu_links][] = management:admin/config/development/tadaa/status/environments
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
 features[user_permission][] = access administration pages
