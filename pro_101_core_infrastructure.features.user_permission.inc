@@ -158,6 +158,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: administer rabbit hole.
+  $permissions['administer rabbit hole'] = array(
+    'name' => 'administer rabbit hole',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'rabbit_hole',
+  );
+
   // Exported permission: administer site configuration.
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',
@@ -222,6 +231,16 @@ function pro_101_core_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: bypass rabbit hole.
+  $permissions['bypass rabbit hole'] = array(
+    'name' => 'bypass rabbit hole',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'rabbit_hole',
   );
 
   // Exported permission: delete revisions.
