@@ -124,6 +124,16 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: administer contexts.
+  $permissions['administer contexts'] = array(
+    'name' => 'administer contexts',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'context_ui',
+  );
+
   // Exported permission: administer fieldgroups.
   $permissions['administer fieldgroups'] = array(
     'name' => 'administer fieldgroups',
