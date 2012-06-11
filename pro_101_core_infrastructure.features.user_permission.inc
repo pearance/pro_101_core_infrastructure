@@ -87,6 +87,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'system',
   );
 
+  // Exported permission: administer Compact Forms.
+  $permissions['administer Compact Forms'] = array(
+    'name' => 'administer Compact Forms',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'compact_forms',
+  );
+
   // Exported permission: administer actions.
   $permissions['administer actions'] = array(
     'name' => 'administer actions',
