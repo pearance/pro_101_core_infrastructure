@@ -75,5 +75,6 @@ features[variable][] = date_format_short
 features[variable][] = jquery_update_compression_type
 features[variable][] = jquery_update_jquery_cdn
 features[variable][] = locale_custom_strings_en
+features[variable][] = node_admin_theme
 features[variable][] = page_cache_maximum_age
 features[variable][] = preprocess_js
