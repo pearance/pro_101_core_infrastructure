@@ -158,6 +158,13 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: administer rh_node.
+  $permissions['administer rh_node'] = array(
+    'name' => 'administer rh_node',
+    'roles' => array(),
+    'module' => 'rabbit_hole',
+  );
+
   // Exported permission: administer site configuration.
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',
@@ -222,6 +229,13 @@ function pro_101_core_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: bypass rh_node.
+  $permissions['bypass rh_node'] = array(
+    'name' => 'bypass rh_node',
+    'roles' => array(),
+    'module' => 'rabbit_hole',
   );
 
   // Exported permission: delete revisions.
