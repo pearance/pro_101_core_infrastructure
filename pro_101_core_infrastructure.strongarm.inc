@@ -117,6 +117,20 @@ function pro_101_core_infrastructure_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'locationmap_block_mapheight';
+  $strongarm->value = 300;
+  $export['locationmap_block_mapheight'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'locationmap_block_mapwidth';
+  $strongarm->value = 700;
+  $export['locationmap_block_mapwidth'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_admin_theme';
   $strongarm->value = '1';
   $export['node_admin_theme'] = $strongarm;
