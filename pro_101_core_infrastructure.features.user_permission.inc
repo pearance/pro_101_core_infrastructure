@@ -115,6 +115,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'boxes',
   );
 
+  // Exported permission: administer contactinfo.
+  $permissions['administer contactinfo'] = array(
+    'name' => 'administer contactinfo',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'contactinfo',
+  );
+
   // Exported permission: administer content types.
   $permissions['administer content types'] = array(
     'name' => 'administer content types',
