@@ -24,6 +24,7 @@ dependencies[] = number
 dependencies[] = options
 dependencies[] = pro_101_custom
 dependencies[] = rabbit_hole
+dependencies[] = rdf
 dependencies[] = rh_node
 dependencies[] = strongarm
 dependencies[] = taxonomy
