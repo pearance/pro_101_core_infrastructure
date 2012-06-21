@@ -19,6 +19,7 @@ dependencies[] = jquery_update
 dependencies[] = libraries
 dependencies[] = link
 dependencies[] = list
+dependencies[] = maxlength
 dependencies[] = menu
 dependencies[] = number
 dependencies[] = options
