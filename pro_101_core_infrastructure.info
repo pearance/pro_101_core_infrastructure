@@ -82,3 +82,4 @@ features[variable][] = locationmap_block_mapwidth
 features[variable][] = node_admin_theme
 features[variable][] = page_cache_maximum_age
 features[variable][] = preprocess_js
+features[variable][] = site_default_country
