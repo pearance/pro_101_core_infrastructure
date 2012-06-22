@@ -107,9 +107,10 @@ function pro_101_core_infrastructure_strongarm() {
   $strongarm->name = 'locale_custom_strings_en';
   $strongarm->value = array(
     '' => array(
-      'Enable developer modules' => 'Enable themer info',
-      'Select an environment' => 'Select a site mode',
       'Disable developer modules' => 'Disable themer info',
+      'Enable developer modules' => 'Enable themer info',
+      'FAQ' => 'Answer',
+      'Select an environment' => 'Select a site mode',
     ),
   );
   $export['locale_custom_strings_en'] = $strongarm;
