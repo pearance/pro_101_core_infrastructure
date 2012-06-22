@@ -23,7 +23,6 @@ dependencies[] = maxlength
 dependencies[] = menu
 dependencies[] = number
 dependencies[] = options
-dependencies[] = pro_101_custom
 dependencies[] = rabbit_hole
 dependencies[] = rdf
 dependencies[] = rh_node
