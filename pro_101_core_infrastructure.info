@@ -84,4 +84,6 @@ features[variable][] = menu_secondary_links_source
 features[variable][] = node_admin_theme
 features[variable][] = page_cache_maximum_age
 features[variable][] = preprocess_js
+features[variable][] = site_403
+features[variable][] = site_404
 features[variable][] = site_default_country
