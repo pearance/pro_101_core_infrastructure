@@ -33,6 +33,7 @@ dependencies[] = update
 dependencies[] = views
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
+features[menu_custom][] = menu-auxiliary
 features[user_permission][] = access administration pages
 features[user_permission][] = access all views
 features[user_permission][] = access content
