@@ -55,6 +55,100 @@ function pro_101_core_infrastructure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'customerror_403';
+  $strongarm->value = '<?php global $user; ?>
+<?php if ($user->uid): ?>  
+  <p>Sorry <?php print $user->name; ?>, you don\'t have permission to view the page you\'ve just tried to access.</p>
+  <p>If you feel that you have received this message in error, please 
+    <a href="contact">contact us</a> with specific details so that we may review your access to this web site.</p>
+  <p>Thanks</p>
+<?php else: ?>
+  <p>This page may be available to clients and registered users only. Please select from one of the other options available to you below.</p>
+  <ul>
+    <li><a href="/user/login?<?php print drupal_get_destination(); ?>">Login</a> to view this page</li>
+    <li>Use the <a href="search">search</a> facility</li>
+    <li>Go to the <a href="/">home page</a></li>
+    <li>Go to the <a href="sitemap">site map</a></li>
+  </ul>
+<?php //print drupal_get_form(\'user_login\'); ?>
+<?php endif; ?>';
+  $export['customerror_403'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'customerror_403_php';
+  $strongarm->value = 1;
+  $export['customerror_403_php'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'customerror_403_theme';
+  $strongarm->value = 'prostarter';
+  $export['customerror_403_theme'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'customerror_403_title';
+  $strongarm->value = 'Access Denied';
+  $export['customerror_403_title'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'customerror_404';
+  $strongarm->value = '<p>Sorry, no content was found at the requested path - it\'s possible that you\'ve requested this page in error.</p>
+
+<p>Use the search form below, or go to the <a href="/">home page.</a></p>
+
+<?php
+// check that the search module exists and the user has permission to hit the form
+if (module_exists(\'search\') && user_access(\'search content\')) {
+  // cool! - customerror doesn\'t trash the page request and the full path is available
+  $path = $_REQUEST[\'destination\'];
+  // bin anything that\'s not alphanumeric and replace with spaces
+  $keys = strtolower(preg_replace(\'/[^a-zA-Z0-9-]+/\', \' \', $path));
+
+  // retrieve the search form using the data we\'ve pull from the request
+  // note that we can override the label for the search terms field here too
+  print drupal_get_form(\'search_form\', NULL, $keys, \'node\', \'Search terms\');
+}
+?>';
+  $export['customerror_404'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'customerror_404_php';
+  $strongarm->value = 1;
+  $export['customerror_404_php'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'customerror_404_theme';
+  $strongarm->value = 'prostarter';
+  $export['customerror_404_theme'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'customerror_404_title';
+  $strongarm->value = 'Page not Found';
+  $export['customerror_404_title'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'customerror_redirect';
+  $strongarm->value = '';
+  $export['customerror_redirect'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'date_default_timezone';
   $strongarm->value = 'America/New_York';
   $export['date_default_timezone'] = $strongarm;
@@ -284,14 +378,14 @@ function pro_101_core_infrastructure_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_403';
-  $strongarm->value = 'node/2';
+  $strongarm->value = 'customerror/403';
   $export['site_403'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_404';
-  $strongarm->value = 'node/1';
+  $strongarm->value = 'customerror/404';
   $export['site_404'] = $strongarm;
 
   $strongarm = new stdClass();
