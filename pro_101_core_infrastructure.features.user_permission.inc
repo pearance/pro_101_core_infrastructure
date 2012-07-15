@@ -96,25 +96,6 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: administer blocks.
-  $permissions['administer blocks'] = array(
-    'name' => 'administer blocks',
-    'roles' => array(
-      0 => 'developer',
-      1 => 'support',
-    ),
-    'module' => 'block',
-  );
-
-  // Exported permission: administer boxes.
-  $permissions['administer boxes'] = array(
-    'name' => 'administer boxes',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'boxes',
-  );
-
   // Exported permission: administer contactinfo.
   $permissions['administer contactinfo'] = array(
     'name' => 'administer contactinfo',
@@ -277,18 +258,6 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'name' => 'edit any block content',
     'roles' => array(),
     'module' => 'node',
-  );
-
-  // Exported permission: edit boxes.
-  $permissions['edit boxes'] = array(
-    'name' => 'edit boxes',
-    'roles' => array(
-      0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
-      3 => 'support',
-    ),
-    'module' => 'boxes',
   );
 
   // Exported permission: edit own block content.
