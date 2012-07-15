@@ -112,6 +112,7 @@ features[variable][] = nodeblock_block
 features[variable][] = nodeblock_comment_link_block
 features[variable][] = nodeblock_node_link_block
 features[variable][] = page_cache_maximum_age
+features[variable][] = pathauto_node_block_pattern
 features[variable][] = preprocess_js
 features[variable][] = rh_node_action_block
 features[variable][] = rh_node_redirect_block
