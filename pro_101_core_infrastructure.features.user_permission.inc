@@ -66,6 +66,16 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'contextual',
   );
 
+  // Exported permission: access private fields.
+  $permissions['access private fields'] = array(
+    'name' => 'access private fields',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'field_permissions',
+  );
+
   // Exported permission: access site in maintenance mode.
   $permissions['access site in maintenance mode'] = array(
     'name' => 'access site in maintenance mode',
@@ -120,6 +130,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: administer field permissions.
+  $permissions['administer field permissions'] = array(
+    'name' => 'administer field permissions',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'field_permissions',
   );
 
   // Exported permission: administer menu.
