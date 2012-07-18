@@ -15,7 +15,8 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'name' => 'access administration pages',
     'roles' => array(
       0 => 'developer',
-      1 => 'support',
+      1 => 'professional',
+      2 => 'support',
     ),
     'module' => 'system',
   );
@@ -47,10 +48,8 @@ function pro_101_core_infrastructure_user_default_permissions() {
   $permissions['access content overview'] = array(
     'name' => 'access content overview',
     'roles' => array(
-      0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
-      3 => 'support',
+      0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'node',
   );
@@ -146,6 +145,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'name' => 'administer nodes',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'node',
   );
