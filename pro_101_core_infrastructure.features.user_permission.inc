@@ -233,21 +233,30 @@ function pro_101_core_infrastructure_user_default_permissions() {
   // Exported permission: create block content.
   $permissions['create block content'] = array(
     'name' => 'create block content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: delete any block content.
   $permissions['delete any block content'] = array(
     'name' => 'delete any block content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: delete own block content.
   $permissions['delete own block content'] = array(
     'name' => 'delete own block content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
     'module' => 'node',
   );
 
@@ -256,8 +265,6 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'name' => 'delete revisions',
     'roles' => array(
       0 => 'developer',
-      1 => 'professional',
-      2 => 'support',
     ),
     'module' => 'node',
   );
@@ -265,7 +272,10 @@ function pro_101_core_infrastructure_user_default_permissions() {
   // Exported permission: edit any block content.
   $permissions['edit any block content'] = array(
     'name' => 'edit any block content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
     'module' => 'node',
   );
 
@@ -281,7 +291,10 @@ function pro_101_core_infrastructure_user_default_permissions() {
   // Exported permission: edit own block content.
   $permissions['edit own block content'] = array(
     'name' => 'edit own block content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
     'module' => 'node',
   );
 
