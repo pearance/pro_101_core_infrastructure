@@ -96,6 +96,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'system',
   );
 
+  // Exported permission: administer blocks.
+  $permissions['administer blocks'] = array(
+    'name' => 'administer blocks',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'block',
+  );
+
   // Exported permission: administer contactinfo.
   $permissions['administer contactinfo'] = array(
     'name' => 'administer contactinfo',
@@ -260,6 +269,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: edit any checklistapi checklist.
+  $permissions['edit any checklistapi checklist'] = array(
+    'name' => 'edit any checklistapi checklist',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'checklistapi',
+  );
+
   // Exported permission: edit own block content.
   $permissions['edit own block content'] = array(
     'name' => 'edit own block content',
@@ -277,6 +295,24 @@ function pro_101_core_infrastructure_user_default_permissions() {
       3 => 'support',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: view any checklistapi checklist.
+  $permissions['view any checklistapi checklist'] = array(
+    'name' => 'view any checklistapi checklist',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'checklistapi',
+  );
+
+  // Exported permission: view checklistapi checklists report.
+  $permissions['view checklistapi checklists report'] = array(
+    'name' => 'view checklistapi checklists report',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'checklistapi',
   );
 
   // Exported permission: view own unpublished content.
