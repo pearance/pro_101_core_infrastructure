@@ -92,9 +92,10 @@ function pro_101_core_infrastructure_user_default_permissions() {
   $permissions['access administration pages'] = array(
     'name' => 'access administration pages',
     'roles' => array(
-      0 => 'developer',
-      1 => 'professional',
-      2 => 'support',
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
     ),
     'module' => 'system',
   );
