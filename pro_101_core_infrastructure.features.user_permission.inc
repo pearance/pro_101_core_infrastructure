@@ -10,6 +10,84 @@
 function pro_101_core_infrastructure_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: Administer Insight.
+  $permissions['Administer Insight'] = array(
+    'name' => 'Administer Insight',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'config_perms',
+  );
+
+  // Exported permission: Administer content node settings.
+  $permissions['Administer content node settings'] = array(
+    'name' => 'Administer content node settings',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'config_perms',
+  );
+
+  // Exported permission: Administer date-time.
+  $permissions['Administer date-time'] = array(
+    'name' => 'Administer date-time',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'config_perms',
+  );
+
+  // Exported permission: Administer site information.
+  $permissions['Administer site information'] = array(
+    'name' => 'Administer site information',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'config_perms',
+  );
+
+  // Exported permission: Administer site maintenance.
+  $permissions['Administer site maintenance'] = array(
+    'name' => 'Administer site maintenance',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'config_perms',
+  );
+
+  // Exported permission: Administer user profile fields.
+  $permissions['Administer user profile fields'] = array(
+    'name' => 'Administer user profile fields',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'config_perms',
+  );
+
+  // Exported permission: Display admin index.
+  $permissions['Display admin index'] = array(
+    'name' => 'Display admin index',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'config_perms',
+  );
+
+  // Exported permission: Display site configuration menu.
+  $permissions['Display site configuration menu'] = array(
+    'name' => 'Display site configuration menu',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'config_perms',
+  );
+
   // Exported permission: access administration pages.
   $permissions['access administration pages'] = array(
     'name' => 'access administration pages',
@@ -130,6 +208,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: administer custom permissions.
+  $permissions['administer custom permissions'] = array(
+    'name' => 'administer custom permissions',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'config_perms',
   );
 
   // Exported permission: administer field permissions.
