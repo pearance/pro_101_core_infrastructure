@@ -10,6 +10,15 @@
 function pro_101_core_infrastructure_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: Administer Insight.
+  $permissions['Administer Insight'] = array(
+    'name' => 'Administer Insight',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'config_perms',
+  );
+
   // Exported permission: access administration pages.
   $permissions['access administration pages'] = array(
     'name' => 'access administration pages',
