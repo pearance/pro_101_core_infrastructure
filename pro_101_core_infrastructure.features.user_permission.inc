@@ -10,15 +10,6 @@
 function pro_101_core_infrastructure_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: Administer Insight.
-  $permissions['Administer Insight'] = array(
-    'name' => 'Administer Insight',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'config_perms',
-  );
-
   // Exported permission: access administration pages.
   $permissions['access administration pages'] = array(
     'name' => 'access administration pages',
@@ -86,6 +77,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'field_permissions',
   );
 
+  // Exported permission: access rules debug.
+  $permissions['access rules debug'] = array(
+    'name' => 'access rules debug',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'rules',
+  );
+
   // Exported permission: access site in maintenance mode.
   $permissions['access site in maintenance mode'] = array(
     'name' => 'access site in maintenance mode',
@@ -104,6 +104,13 @@ function pro_101_core_infrastructure_user_default_permissions() {
       1 => 'support',
     ),
     'module' => 'system',
+  );
+
+  // Exported permission: administer Insight.
+  $permissions['administer Insight'] = array(
+    'name' => 'administer Insight',
+    'roles' => array(),
+    'module' => 'config_perms',
   );
 
   // Exported permission: administer actions.
@@ -251,6 +258,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'rabbit_hole',
   );
 
+  // Exported permission: administer rules.
+  $permissions['administer rules'] = array(
+    'name' => 'administer rules',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'rules',
+  );
+
   // Exported permission: administer site configuration.
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',
@@ -353,6 +369,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'rabbit_hole',
   );
 
+  // Exported permission: bypass rules access.
+  $permissions['bypass rules access'] = array(
+    'name' => 'bypass rules access',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'rules',
+  );
+
   // Exported permission: create block content.
   $permissions['create block content'] = array(
     'name' => 'create block content',
@@ -390,6 +415,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: display admin index.
+  $permissions['display admin index'] = array(
+    'name' => 'display admin index',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'config_perms',
   );
 
   // Exported permission: display site building menu.

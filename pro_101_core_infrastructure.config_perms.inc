@@ -71,7 +71,7 @@ function pro_101_core_infrastructure_config_perms() {
   $config_perms->api_version = 1;
   $config_perms->machine_name = 'administer_insight';
   $config_perms->status = TRUE;
-  $config_perms->name = 'Administer Insight';
+  $config_perms->name = 'administer Insight';
   $config_perms->path = array(
     0 => 'admin/config/services/insight',
   );
@@ -134,6 +134,17 @@ function pro_101_core_infrastructure_config_perms() {
     0 => 'admin/user/profile',
   );
   $export['administer_user_profile_fields'] = $config_perms;
+
+  $config_perms = new stdClass();
+  $config_perms->disabled = FALSE; /* Edit this to true to make a default config_perms disabled initially */
+  $config_perms->api_version = 1;
+  $config_perms->machine_name = 'display_admin_index';
+  $config_perms->status = TRUE;
+  $config_perms->name = 'display admin index';
+  $config_perms->path = array(
+    0 => 'admin/index',
+  );
+  $export['display_admin_index'] = $config_perms;
 
   $config_perms = new stdClass();
   $config_perms->disabled = FALSE; /* Edit this to true to make a default config_perms disabled initially */
