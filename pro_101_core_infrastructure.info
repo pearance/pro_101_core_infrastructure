@@ -34,7 +34,6 @@ dependencies[] = taxonomy
 dependencies[] = token
 dependencies[] = update
 dependencies[] = views
-features[ctools][] = config_perms:config_perms:1
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
 features[field][] = node-block-body
