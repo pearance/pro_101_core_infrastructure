@@ -21,7 +21,7 @@ function pro_101_core_infrastructure_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'cache_lifetime';
-  $strongarm->value = '300';
+  $strongarm->value = '86400';
   $export['cache_lifetime'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -49,7 +49,7 @@ function pro_101_core_infrastructure_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'cron_safe_threshold';
-  $strongarm->value = '10800';
+  $strongarm->value = '86400';
   $export['cron_safe_threshold'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -329,7 +329,7 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'page_cache_maximum_age';
-  $strongarm->value = '300';
+  $strongarm->value = '86400';
   $export['page_cache_maximum_age'] = $strongarm;
 
   $strongarm = new stdClass();
