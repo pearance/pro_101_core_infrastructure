@@ -157,7 +157,7 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'date_first_day';
-  $strongarm->value = '0';
+  $strongarm->value = '1';
   $export['date_first_day'] = $strongarm;
 
   $strongarm = new stdClass();
