@@ -164,9 +164,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
   // Exported permission: administer modules.
   $permissions['administer modules'] = array(
     'name' => 'administer modules',
-    'roles' => array(
-      0 => 'developer',
-    ),
+    'roles' => array(),
     'module' => 'system',
   );
 
