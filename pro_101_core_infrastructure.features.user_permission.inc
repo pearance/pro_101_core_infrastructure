@@ -344,6 +344,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: exclude from message filtering.
+  $permissions['exclude from message filtering'] = array(
+    'name' => 'exclude from message filtering',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'disable_messages',
+  );
+
   // Exported permission: revert revisions.
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
@@ -372,6 +381,20 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'checklistapi',
   );
 
+  // Exported permission: view error messages.
+  $permissions['view error messages'] = array(
+    'name' => 'view error messages',
+    'roles' => array(
+      0 => 'anonymous user',
+      1 => 'assistant',
+      2 => 'authenticated user',
+      3 => 'developer',
+      4 => 'professional',
+      5 => 'support',
+    ),
+    'module' => 'disable_messages',
+  );
+
   // Exported permission: view own unpublished content.
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
@@ -397,6 +420,20 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: view status messages.
+  $permissions['view status messages'] = array(
+    'name' => 'view status messages',
+    'roles' => array(
+      0 => 'anonymous user',
+      1 => 'assistant',
+      2 => 'authenticated user',
+      3 => 'developer',
+      4 => 'professional',
+      5 => 'support',
+    ),
+    'module' => 'disable_messages',
+  );
+
   // Exported permission: view the administration theme.
   $permissions['view the administration theme'] = array(
     'name' => 'view the administration theme',
@@ -407,6 +444,20 @@ function pro_101_core_infrastructure_user_default_permissions() {
       3 => 'support',
     ),
     'module' => 'system',
+  );
+
+  // Exported permission: view warning messages.
+  $permissions['view warning messages'] = array(
+    'name' => 'view warning messages',
+    'roles' => array(
+      0 => 'anonymous user',
+      1 => 'assistant',
+      2 => 'authenticated user',
+      3 => 'developer',
+      4 => 'professional',
+      5 => 'support',
+    ),
+    'module' => 'disable_messages',
   );
 
   return $permissions;
