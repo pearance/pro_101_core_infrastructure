@@ -125,7 +125,6 @@ features[variable][] = feedburner_domain
 features[variable][] = feedburner_feedflare_display
 features[variable][] = feedburner_feedflare_feed
 features[variable][] = feedburner_feedflare_node_types
-features[variable][] = feedburner_ping_last
 features[variable][] = feedburner_redirect_status
 features[variable][] = feedburner_replace_html
 features[variable][] = feedburner_useragents

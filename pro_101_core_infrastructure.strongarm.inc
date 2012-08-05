@@ -289,13 +289,6 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'feedburner_ping_last';
-  $strongarm->value = 1344158289;
-  $export['feedburner_ping_last'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'feedburner_redirect_status';
   $strongarm->value = 307;
   $export['feedburner_redirect_status'] = $strongarm;
