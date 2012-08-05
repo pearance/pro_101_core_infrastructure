@@ -19,6 +19,13 @@ function pro_101_core_infrastructure_ctools_plugin_api() {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function pro_101_core_infrastructure_views_api() {
+  return array("version" => "3.0");
+}
+
+/**
  * Implements hook_node_info().
  */
 function pro_101_core_infrastructure_node_info() {
