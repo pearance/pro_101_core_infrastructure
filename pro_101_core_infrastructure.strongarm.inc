@@ -275,9 +275,9 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm->api_version = 1;
   $strongarm->name = 'feedburner_feedflare_node_types';
   $strongarm->value = array(
-    'faq' => 0,
     'block' => 0,
     'blog' => 0,
+    'faq' => 0,
     'featured' => 0,
     'page' => 0,
     'specialty' => 0,
