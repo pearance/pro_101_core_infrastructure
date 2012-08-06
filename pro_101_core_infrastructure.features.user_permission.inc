@@ -371,6 +371,24 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'disable_messages',
   );
 
+  // Exported permission: export taxonomy by csv.
+  $permissions['export taxonomy by csv'] = array(
+    'name' => 'export taxonomy by csv',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'taxonomy_csv',
+  );
+
+  // Exported permission: import taxonomy by csv.
+  $permissions['import taxonomy by csv'] = array(
+    'name' => 'import taxonomy by csv',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'taxonomy_csv',
+  );
+
   // Exported permission: revert revisions.
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
