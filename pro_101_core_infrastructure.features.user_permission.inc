@@ -107,6 +107,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'system',
   );
 
+  // Exported permission: add feedburner feed to own blog.
+  $permissions['add feedburner feed to own blog'] = array(
+    'name' => 'add feedburner feed to own blog',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'feedburner',
+  );
+
   // Exported permission: administer actions.
   $permissions['administer actions'] = array(
     'name' => 'administer actions',
@@ -141,6 +150,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: administer feedburner.
+  $permissions['administer feedburner'] = array(
+    'name' => 'administer feedburner',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'feedburner',
   );
 
   // Exported permission: administer field permissions.
@@ -411,6 +429,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
       5 => 'support',
     ),
     'module' => 'disable_messages',
+  );
+
+  // Exported permission: view feedflare.
+  $permissions['view feedflare'] = array(
+    'name' => 'view feedflare',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'feedburner',
   );
 
   // Exported permission: view own unpublished content.
