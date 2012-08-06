@@ -435,6 +435,20 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'rss_permissions_disable_all';
+  $strongarm->value = FALSE;
+  $export['rss_permissions_disable_all'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rss_permissions_feed_icon_theme';
+  $strongarm->value = 'theme_feed_icon';
+  $export['rss_permissions_feed_icon_theme'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'show_diff_inline_block';
   $strongarm->value = 1;
   $export['show_diff_inline_block'] = $strongarm;

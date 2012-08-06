@@ -87,6 +87,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'rules',
   );
 
+  // Exported permission: access site RSS feed.
+  $permissions['access site RSS feed'] = array(
+    'name' => 'access site RSS feed',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'rss_permissions',
+  );
+
   // Exported permission: access site in maintenance mode.
   $permissions['access site in maintenance mode'] = array(
     'name' => 'access site in maintenance mode',
@@ -105,6 +114,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
       1 => 'support',
     ),
     'module' => 'system',
+  );
+
+  // Exported permission: access taxonomy RSS feeds.
+  $permissions['access taxonomy RSS feeds'] = array(
+    'name' => 'access taxonomy RSS feeds',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'rss_permissions',
   );
 
   // Exported permission: administer actions.
