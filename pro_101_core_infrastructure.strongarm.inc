@@ -249,67 +249,6 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'feedburner_domain';
-  $strongarm->value = 'feeds.feedburner.com';
-  $export['feedburner_domain'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'feedburner_feedflare_display';
-  $strongarm->value = array(
-    'teaser' => 0,
-    'page' => 0,
-  );
-  $export['feedburner_feedflare_display'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'feedburner_feedflare_feed';
-  $strongarm->value = '0';
-  $export['feedburner_feedflare_feed'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'feedburner_feedflare_node_types';
-  $strongarm->value = array(
-    'block' => 0,
-    'blog' => 0,
-    'faq' => 0,
-    'featured' => 0,
-    'page' => 0,
-    'specialty' => 0,
-    'testimonial' => 0,
-    'webform' => 0,
-  );
-  $export['feedburner_feedflare_node_types'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'feedburner_redirect_status';
-  $strongarm->value = 307;
-  $export['feedburner_redirect_status'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'feedburner_replace_html';
-  $strongarm->value = 0;
-  $export['feedburner_replace_html'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'feedburner_useragents';
-  $strongarm->value = '/feedburner|feedvalidator/i';
-  $export['feedburner_useragents'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__block';
   $strongarm->value = array(
     'view_modes' => array(),
