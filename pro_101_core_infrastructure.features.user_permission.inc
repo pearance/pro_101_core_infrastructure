@@ -107,15 +107,6 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: add feedburner feed to own blog.
-  $permissions['add feedburner feed to own blog'] = array(
-    'name' => 'add feedburner feed to own blog',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'feedburner',
-  );
-
   // Exported permission: administer actions.
   $permissions['administer actions'] = array(
     'name' => 'administer actions',

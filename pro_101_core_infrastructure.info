@@ -54,7 +54,6 @@ features[user_permission][] = access private fields
 features[user_permission][] = access rules debug
 features[user_permission][] = access site in maintenance mode
 features[user_permission][] = access site reports
-features[user_permission][] = add feedburner feed to own blog
 features[user_permission][] = administer actions
 features[user_permission][] = administer blocks
 features[user_permission][] = administer contactinfo
