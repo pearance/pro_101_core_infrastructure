@@ -161,6 +161,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: administer distributed blocks.
+  $permissions['administer distributed blocks'] = array(
+    'name' => 'administer distributed blocks',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'distributed_blocks',
+  );
+
   // Exported permission: administer field permissions.
   $permissions['administer field permissions'] = array(
     'name' => 'administer field permissions',
@@ -407,6 +416,13 @@ function pro_101_core_infrastructure_user_default_permissions() {
       1 => 'support',
     ),
     'module' => 'php',
+  );
+
+  // Exported permission: use text format php_code.
+  $permissions['use text format php_code'] = array(
+    'name' => 'use text format php_code',
+    'roles' => array(),
+    'module' => 'filter',
   );
 
   // Exported permission: view any checklistapi checklist.
