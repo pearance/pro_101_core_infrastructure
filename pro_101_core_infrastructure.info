@@ -41,7 +41,6 @@ dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = taxonomy_csv
 dependencies[] = token
-dependencies[] = update
 dependencies[] = views
 features[ctools][] = config_perms:config_perms:1
 features[ctools][] = strongarm:strongarm:1
