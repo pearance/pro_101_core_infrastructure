@@ -52,6 +52,7 @@ function pro_101_core_infrastructure_filter_default_formats() {
         'status' => '1',
         'settings' => array(
           'local_paths' => '/',
+          'protocol_style' => 'full',
           'absolute' => 1,
         ),
       ),

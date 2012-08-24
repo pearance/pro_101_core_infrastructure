@@ -18,6 +18,7 @@ dependencies[] = defaultcontent
 dependencies[] = disable_messages
 dependencies[] = distributed_blocks
 dependencies[] = features
+dependencies[] = field_group
 dependencies[] = field_permissions
 dependencies[] = invisimail
 dependencies[] = jquery_update
