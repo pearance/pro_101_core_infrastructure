@@ -350,7 +350,7 @@ function pro_101_core_infrastructure_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'boost_normal_dir';
-  $strongarm->value = '';
+  $strongarm->value = 'normal';
   $export['boost_normal_dir'] = $strongarm;
 
   $strongarm = new stdClass();
