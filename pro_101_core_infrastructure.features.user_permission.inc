@@ -162,6 +162,13 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: administer contexts.
+  $permissions['administer contexts'] = array(
+    'name' => 'administer contexts',
+    'roles' => array(),
+    'module' => 'context_ui',
+  );
+
   // Exported permission: administer distributed blocks.
   $permissions['administer distributed blocks'] = array(
     'name' => 'administer distributed blocks',
@@ -178,6 +185,13 @@ function pro_101_core_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'field_permissions',
+  );
+
+  // Exported permission: administer fieldgroups.
+  $permissions['administer fieldgroups'] = array(
+    'name' => 'administer fieldgroups',
+    'roles' => array(),
+    'module' => 'field_group',
   );
 
   // Exported permission: administer menu.
@@ -276,6 +290,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'system',
+  );
+
+  // Exported permission: boost flush pages.
+  $permissions['boost flush pages'] = array(
+    'name' => 'boost flush pages',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'boost',
   );
 
   // Exported permission: bypass node access.
