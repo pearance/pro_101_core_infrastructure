@@ -162,13 +162,6 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: administer contexts.
-  $permissions['administer contexts'] = array(
-    'name' => 'administer contexts',
-    'roles' => array(),
-    'module' => 'context_ui',
-  );
-
   // Exported permission: administer distributed blocks.
   $permissions['administer distributed blocks'] = array(
     'name' => 'administer distributed blocks',
@@ -375,15 +368,6 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: edit any checklistapi checklist.
-  $permissions['edit any checklistapi checklist'] = array(
-    'name' => 'edit any checklistapi checklist',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'checklistapi',
-  );
-
   // Exported permission: edit own block content.
   $permissions['edit own block content'] = array(
     'name' => 'edit own block content',
@@ -446,24 +430,6 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'name' => 'use text format php_code',
     'roles' => array(),
     'module' => 'filter',
-  );
-
-  // Exported permission: view any checklistapi checklist.
-  $permissions['view any checklistapi checklist'] = array(
-    'name' => 'view any checklistapi checklist',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'checklistapi',
-  );
-
-  // Exported permission: view checklistapi checklists report.
-  $permissions['view checklistapi checklists report'] = array(
-    'name' => 'view checklistapi checklists report',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'checklistapi',
   );
 
   // Exported permission: view error messages.
