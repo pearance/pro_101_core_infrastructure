@@ -600,7 +600,7 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'distributed_blocks_expose';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['distributed_blocks_expose'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -610,6 +610,7 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm->value = array(
     'masquerade|masquerade|Masquerade' => 0,
     'webform|client-block-1|Webform: Contact' => 0,
+    'boost|status|Boost: Pages cache status' => 0,
     'contactinfo|hcard|Contact information' => 0,
     'context_ui|editor|Context editor' => 0,
     'context_ui|devel|Context inspector' => 0,
@@ -643,9 +644,9 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
     'node|syndicate|Syndicate' => 0,
     'node|recent|Recent content' => 0,
     'nodeblock|6|Social Welcome (nodeblock)' => 0,
-    'nodeblock|20|Site Disclaimer (nodeblock)' => 0,
-    'nodeblock|21|Prominent Contact Info (nodeblock)' => 0,
-    'nodeblock|22|RSS Count (nodeblock)' => 0,
+    'nodeblock|7|RSS Count (nodeblock)' => 0,
+    'nodeblock|21|Site Disclaimer (nodeblock)' => 0,
+    'nodeblock|22|Prominent Contact Info (nodeblock)' => 0,
     'sharethis|sharethis_block|ShareThis' => 0,
     'shortcut|shortcuts|Shortcuts' => 0,
     'system|main|Main page content' => 0,
