@@ -153,6 +153,13 @@ function pro_101_core_infrastructure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'boost_enabled_text/css';
+  $strongarm->value = FALSE;
+  $export['boost_enabled_text/css'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'boost_enabled_text/html';
   $strongarm->value = 1;
   $export['boost_enabled_text/html'] = $strongarm;
