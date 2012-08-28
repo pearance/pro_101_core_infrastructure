@@ -30,6 +30,7 @@ dependencies[] = list
 dependencies[] = maxlength
 dependencies[] = menu
 dependencies[] = nodeblock
+dependencies[] = nodeformcols
 dependencies[] = number
 dependencies[] = options
 dependencies[] = pathologic
