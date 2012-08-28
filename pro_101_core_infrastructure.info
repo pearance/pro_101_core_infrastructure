@@ -22,7 +22,6 @@ dependencies[] = field_group
 dependencies[] = field_permissions
 dependencies[] = invisimail
 dependencies[] = jquery_update
-dependencies[] = labjs
 dependencies[] = lexicon
 dependencies[] = libraries
 dependencies[] = link
