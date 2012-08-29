@@ -37,6 +37,7 @@ dependencies[] = pathologic
 dependencies[] = php
 dependencies[] = rabbit_hole
 dependencies[] = rdf
+dependencies[] = resource
 dependencies[] = rh_node
 dependencies[] = rss_permissions
 dependencies[] = rules
