@@ -232,4 +232,5 @@ features[variable][] = site_default_country
 features[variable][] = update_check_disabled
 features[variable][] = update_check_frequency
 features[variable][] = update_notification_threshold
+features[variable][] = update_notify_emails
 features[views_view][] = site_feed

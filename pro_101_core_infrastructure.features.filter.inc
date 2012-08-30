@@ -60,10 +60,10 @@ function pro_101_core_infrastructure_filter_default_formats() {
             ),
             1 => array(
               'path' => '/',
-              'host' => 'pro101b.platdev.info',
+              'host' => 'pro101a.platdev.info',
             ),
           ),
-          'base_url_host' => 'pro101b.platdev.info',
+          'base_url_host' => 'pro101a.platdev.info',
         ),
       ),
     ),
