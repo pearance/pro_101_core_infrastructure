@@ -290,6 +290,7 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'name' => 'boost flush pages',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'boost',
   );
