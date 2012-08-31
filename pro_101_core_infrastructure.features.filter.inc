@@ -19,12 +19,12 @@ function pro_101_core_infrastructure_filter_default_formats() {
     'weight' => '11',
     'filters' => array(
       'php_code' => array(
-        'weight' => '-48',
+        'weight' => '-50',
         'status' => '1',
         'settings' => array(),
       ),
       'invisimail_encode_js_entities' => array(
-        'weight' => '-47',
+        'weight' => '-49',
         'status' => '1',
         'settings' => array(
           'encoder' => 'js_entities',
@@ -33,22 +33,43 @@ function pro_101_core_infrastructure_filter_default_formats() {
         ),
       ),
       'filter_autop' => array(
-        'weight' => '-43',
+        'weight' => '-48',
         'status' => '1',
         'settings' => array(),
       ),
       'filter_htmlcorrector' => array(
-        'weight' => '-41',
+        'weight' => '-47',
         'status' => '1',
         'settings' => array(),
       ),
       'filter_lexicon' => array(
-        'weight' => '-40',
+        'weight' => '-46',
         'status' => '1',
         'settings' => array(),
       ),
+      'collapse_text_filter' => array(
+        'weight' => '-42',
+        'status' => '1',
+        'settings' => array(
+          'form' => 1,
+          'default_title' => 'Show more or less',
+        ),
+      ),
+      'image_resize_filter' => array(
+        'weight' => '-41',
+        'status' => '1',
+        'settings' => array(
+          'link' => 0,
+          'link_class' => '',
+          'link_rel' => '',
+          'image_locations' => array(
+            'local' => 'local',
+            'remote' => 0,
+          ),
+        ),
+      ),
       'pathologic' => array(
-        'weight' => '-39',
+        'weight' => '-40',
         'status' => '1',
         'settings' => array(
           'local_paths' => '/',
