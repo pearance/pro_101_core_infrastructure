@@ -175,7 +175,7 @@ function pro_101_core_infrastructure_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'boost_enabled_text/javascript';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['boost_enabled_text/javascript'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -301,7 +301,7 @@ function pro_101_core_infrastructure_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'boost_lifetime_max_text/javascript';
-  $strongarm->value = '3600';
+  $strongarm->value = '604800';
   $export['boost_lifetime_max_text/javascript'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -343,7 +343,7 @@ function pro_101_core_infrastructure_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'boost_lifetime_min_text/javascript';
-  $strongarm->value = '0';
+  $strongarm->value = '86400';
   $export['boost_lifetime_min_text/javascript'] = $strongarm;
 
   $strongarm = new stdClass();
