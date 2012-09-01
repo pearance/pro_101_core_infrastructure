@@ -68,6 +68,20 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'contextual',
   );
 
+  // Exported permission: access overlay.
+  $permissions['access overlay'] = array(
+    'name' => 'access overlay',
+    'roles' => array(
+      0 => 'anonymous user',
+      1 => 'assistant',
+      2 => 'authenticated user',
+      3 => 'developer',
+      4 => 'professional',
+      5 => 'support',
+    ),
+    'module' => 'overlay',
+  );
+
   // Exported permission: access private fields.
   $permissions['access private fields'] = array(
     'name' => 'access private fields',

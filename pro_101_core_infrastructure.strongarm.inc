@@ -978,6 +978,17 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'overlay_paths_example_paths';
+  $strongarm->value = array(
+    'user/login' => TRUE,
+    'user/register' => TRUE,
+    'user/password' => TRUE,
+  );
+  $export['overlay_paths_example_paths'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'page_cache_maximum_age';
   $strongarm->value = '86400';
   $export['page_cache_maximum_age'] = $strongarm;
