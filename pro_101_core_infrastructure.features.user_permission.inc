@@ -432,15 +432,6 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: use text format php_code.
-  $permissions['use text format php_code'] = array(
-    'name' => 'use text format php_code',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'filter',
-  );
-
   // Exported permission: view error messages.
   $permissions['view error messages'] = array(
     'name' => 'view error messages',
