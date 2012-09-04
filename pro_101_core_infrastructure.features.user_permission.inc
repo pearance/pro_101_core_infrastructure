@@ -154,7 +154,6 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'name' => 'administer blocks',
     'roles' => array(
       0 => 'developer',
-      1 => 'support',
     ),
     'module' => 'block',
   );
@@ -175,6 +174,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: administer devel menu items.
+  $permissions['administer devel menu items'] = array(
+    'name' => 'administer devel menu items',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'menu_admin_per_menu',
   );
 
   // Exported permission: administer distributed blocks.
@@ -198,8 +206,29 @@ function pro_101_core_infrastructure_user_default_permissions() {
   // Exported permission: administer fieldgroups.
   $permissions['administer fieldgroups'] = array(
     'name' => 'administer fieldgroups',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+    ),
     'module' => 'field_group',
+  );
+
+  // Exported permission: administer main-menu menu items.
+  $permissions['administer main-menu menu items'] = array(
+    'name' => 'administer main-menu menu items',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'menu_admin_per_menu',
+  );
+
+  // Exported permission: administer management menu items.
+  $permissions['administer management menu items'] = array(
+    'name' => 'administer management menu items',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'menu_admin_per_menu',
   );
 
   // Exported permission: administer menu.
@@ -211,11 +240,30 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'menu',
   );
 
+  // Exported permission: administer menu-auxiliary menu items.
+  $permissions['administer menu-auxiliary menu items'] = array(
+    'name' => 'administer menu-auxiliary menu items',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'menu_admin_per_menu',
+  );
+
   // Exported permission: administer modules.
   $permissions['administer modules'] = array(
     'name' => 'administer modules',
     'roles' => array(),
     'module' => 'system',
+  );
+
+  // Exported permission: administer navigation menu items.
+  $permissions['administer navigation menu items'] = array(
+    'name' => 'administer navigation menu items',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'menu_admin_per_menu',
   );
 
   // Exported permission: administer nodes.
@@ -281,6 +329,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
       1 => 'support',
     ),
     'module' => 'system',
+  );
+
+  // Exported permission: administer user-menu menu items.
+  $permissions['administer user-menu menu items'] = array(
+    'name' => 'administer user-menu menu items',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'menu_admin_per_menu',
   );
 
   // Exported permission: administer views.
