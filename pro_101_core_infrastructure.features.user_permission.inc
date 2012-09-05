@@ -212,15 +212,6 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'field_group',
   );
 
-  // Exported permission: administer glossary vocabulary terms.
-  $permissions['administer glossary vocabulary terms'] = array(
-    'name' => 'administer glossary vocabulary terms',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'vppr',
-  );
-
   // Exported permission: administer main-menu menu items.
   $permissions['administer main-menu menu items'] = array(
     'name' => 'administer main-menu menu items',
@@ -285,16 +276,6 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: administer question_category vocabulary terms.
-  $permissions['administer question_category vocabulary terms'] = array(
-    'name' => 'administer question_category vocabulary terms',
-    'roles' => array(
-      0 => 'developer',
-      1 => 'support',
-    ),
-    'module' => 'vppr',
-  );
-
   // Exported permission: administer rh_node.
   $permissions['administer rh_node'] = array(
     'name' => 'administer rh_node',
@@ -328,16 +309,6 @@ function pro_101_core_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'system',
-  );
-
-  // Exported permission: administer tags vocabulary terms.
-  $permissions['administer tags vocabulary terms'] = array(
-    'name' => 'administer tags vocabulary terms',
-    'roles' => array(
-      0 => 'developer',
-      1 => 'support',
-    ),
-    'module' => 'vppr',
   );
 
   // Exported permission: administer taxonomy.
