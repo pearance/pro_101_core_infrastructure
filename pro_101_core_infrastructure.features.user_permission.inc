@@ -176,15 +176,6 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: administer devel menu items.
-  $permissions['administer devel menu items'] = array(
-    'name' => 'administer devel menu items',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'menu_admin_per_menu',
-  );
-
   // Exported permission: administer distributed blocks.
   $permissions['administer distributed blocks'] = array(
     'name' => 'administer distributed blocks',

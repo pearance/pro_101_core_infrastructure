@@ -74,7 +74,6 @@ features[user_permission][] = administer actions
 features[user_permission][] = administer blocks
 features[user_permission][] = administer contactinfo
 features[user_permission][] = administer content types
-features[user_permission][] = administer devel menu items
 features[user_permission][] = administer distributed blocks
 features[user_permission][] = administer field permissions
 features[user_permission][] = administer fieldgroups
