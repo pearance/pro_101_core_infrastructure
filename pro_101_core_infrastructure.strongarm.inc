@@ -543,6 +543,13 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'default_nodes_main';
+  $strongarm->value = '3';
+  $export['default_nodes_main'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'disable_messages_debug_visible_div';
   $strongarm->value = 0;
   $export['disable_messages_debug_visible_div'] = $strongarm;
