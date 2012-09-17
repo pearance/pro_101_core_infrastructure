@@ -20,6 +20,41 @@ function pro_101_core_infrastructure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'admin_theme_admin_theme_batch';
+  $strongarm->value = 1;
+  $export['admin_theme_admin_theme_batch'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'admin_theme_admin_theme_devel';
+  $strongarm->value = 1;
+  $export['admin_theme_admin_theme_devel'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'admin_theme_admin_theme_webform_results';
+  $strongarm->value = 1;
+  $export['admin_theme_admin_theme_webform_results'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'admin_theme_path';
+  $strongarm->value = 'node/*/moderation/*/unpublish';
+  $export['admin_theme_path'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'admin_theme_path_disallow';
+  $strongarm->value = '';
+  $export['admin_theme_path_disallow'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'boost_cacheability_option';
   $strongarm->value = '0';
   $export['boost_cacheability_option'] = $strongarm;
@@ -1117,6 +1152,18 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm->name = 'node_submitted_block';
   $strongarm->value = 0;
   $export['node_submitted_block'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'overlay_paths_example_paths';
+  $strongarm->value = array(
+    'xuser/register' => TRUE,
+    'xuser/register/*' => TRUE,
+    'xuser/register/step/2' => FALSE,
+    'node/*/moderation/*/unpublish' => TRUE,
+  );
+  $export['overlay_paths_example_paths'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

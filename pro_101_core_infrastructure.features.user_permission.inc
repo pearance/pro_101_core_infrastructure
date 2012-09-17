@@ -10,6 +10,18 @@
 function pro_101_core_infrastructure_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: access admin theme.
+  $permissions['access admin theme'] = array(
+    'name' => 'access admin theme',
+    'roles' => array(
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
+    ),
+    'module' => 'admin_theme',
+  );
+
   // Exported permission: access administration pages.
   $permissions['access administration pages'] = array(
     'name' => 'access administration pages',
