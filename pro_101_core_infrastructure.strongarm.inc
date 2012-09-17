@@ -1101,7 +1101,6 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm->name = 'node_options_block';
   $strongarm->value = array(
     0 => 'status',
-    1 => 'revision',
   );
   $export['node_options_block'] = $strongarm;
 
@@ -1144,14 +1143,14 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'rh_node_action_block';
-  $strongarm->value = '2';
+  $strongarm->value = '3';
   $export['rh_node_action_block'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'rh_node_redirect_block';
-  $strongarm->value = '';
+  $strongarm->value = 'admin/structure/context';
   $export['rh_node_redirect_block'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1214,7 +1213,7 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'workbench_moderation_default_state_block';
-  $strongarm->value = 'draft';
+  $strongarm->value = 'published';
   $export['workbench_moderation_default_state_block'] = $strongarm;
 
   return $export;

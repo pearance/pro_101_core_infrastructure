@@ -162,7 +162,10 @@ function pro_101_core_infrastructure_user_default_permissions() {
   $permissions['administer contactinfo'] = array(
     'name' => 'administer contactinfo',
     'roles' => array(
-      0 => 'developer',
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
     ),
     'module' => 'contactinfo',
   );
@@ -192,15 +195,6 @@ function pro_101_core_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'field_permissions',
-  );
-
-  // Exported permission: administer fieldgroups.
-  $permissions['administer fieldgroups'] = array(
-    'name' => 'administer fieldgroups',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'field_group',
   );
 
   // Exported permission: administer main-menu menu items.
@@ -472,7 +466,6 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'name' => 'revert revisions',
     'roles' => array(
       0 => 'developer',
-      1 => 'support',
     ),
     'module' => 'node',
   );
