@@ -414,7 +414,6 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'name' => 'delete own block content',
     'roles' => array(
       0 => 'developer',
-      1 => 'support',
     ),
     'module' => 'node',
   );
