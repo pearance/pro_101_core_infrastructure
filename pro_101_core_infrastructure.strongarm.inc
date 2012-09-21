@@ -436,7 +436,7 @@ function pro_101_core_infrastructure_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'contentanalysis_type_block_enable';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['contentanalysis_type_block_enable'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -788,6 +788,9 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
         'redirect' => array(
           'weight' => '30',
         ),
+        'path' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(),
     ),
@@ -1099,13 +1102,6 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
       'has_required' => TRUE,
       'title' => 'Title',
     ),
-    'additional_settings' => array(
-      'region' => 'right',
-      'weight' => '1',
-      'has_required' => FALSE,
-      'title' => NULL,
-      'hidden' => 0,
-    ),
     'actions' => array(
       'region' => 'right',
       'weight' => '0',
@@ -1118,6 +1114,20 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
       'weight' => '1',
       'has_required' => FALSE,
       'title' => 'Body',
+      'hidden' => 0,
+    ),
+    'field_create_info' => array(
+      'region' => 'right',
+      'weight' => '2',
+      'has_required' => FALSE,
+      'title' => 'Create Info',
+      'hidden' => 0,
+    ),
+    'additional_settings' => array(
+      'region' => 'right',
+      'weight' => '1',
+      'has_required' => FALSE,
+      'title' => NULL,
       'hidden' => 0,
     ),
   );
@@ -1136,6 +1146,7 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm->name = 'node_options_block';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_block'] = $strongarm;
 

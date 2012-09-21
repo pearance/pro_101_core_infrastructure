@@ -268,7 +268,6 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'name' => 'administer nodes',
     'roles' => array(
       0 => 'developer',
-      1 => 'support',
     ),
     'module' => 'node',
   );
