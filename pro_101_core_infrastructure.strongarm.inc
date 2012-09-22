@@ -42,7 +42,8 @@ function pro_101_core_infrastructure_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'admin_theme_path';
-  $strongarm->value = 'node/*/moderation/*/unpublish';
+  $strongarm->value = 'node/*/moderation/*/unpublish
+user/*/content_lock';
   $export['admin_theme_path'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1173,6 +1174,7 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
     'xuser/register/*' => TRUE,
     'xuser/register/step/2' => FALSE,
     'node/*/moderation/*/unpublish' => TRUE,
+    'user/*/content_lock' => TRUE,
   );
   $export['overlay_paths_example_paths'] = $strongarm;
 
