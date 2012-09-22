@@ -137,7 +137,8 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'name' => 'access site reports',
     'roles' => array(
       0 => 'developer',
-      1 => 'support',
+      1 => 'professional',
+      2 => 'support',
     ),
     'module' => 'system',
   );
