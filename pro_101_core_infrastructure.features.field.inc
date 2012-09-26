@@ -57,14 +57,20 @@ function pro_101_core_infrastructure_field_default_fields() {
         'default' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+          ),
           'type' => 'text_default',
           'weight' => '0',
         ),
         'full' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+          ),
           'type' => 'text_default',
           'weight' => '0',
         ),
@@ -72,6 +78,8 @@ function pro_101_core_infrastructure_field_default_fields() {
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
