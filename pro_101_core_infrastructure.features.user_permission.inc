@@ -276,7 +276,9 @@ function pro_101_core_infrastructure_user_default_permissions() {
   // Exported permission: administer rh_node.
   $permissions['administer rh_node'] = array(
     'name' => 'administer rh_node',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+    ),
     'module' => 'rabbit_hole',
   );
 
@@ -377,7 +379,12 @@ function pro_101_core_infrastructure_user_default_permissions() {
   // Exported permission: bypass rh_node.
   $permissions['bypass rh_node'] = array(
     'name' => 'bypass rh_node',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
+    ),
     'module' => 'rabbit_hole',
   );
 
