@@ -538,7 +538,7 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'customerror_redirect';
-  $strongarm->value = '';
+  $strongarm->value = 'node/* <front>';
   $export['customerror_redirect'] = $strongarm;
 
   $strongarm = new stdClass();
