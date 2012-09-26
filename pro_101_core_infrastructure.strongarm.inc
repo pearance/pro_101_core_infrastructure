@@ -539,7 +539,7 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'customerror_redirect';
-  $strongarm->value = 'node/* <front>';
+  $strongarm->value = '^.*/\\d+$ <front>';
   $export['customerror_redirect'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1205,14 +1205,14 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'rh_node_action_block';
-  $strongarm->value = '3';
+  $strongarm->value = '2';
   $export['rh_node_action_block'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'rh_node_redirect_block';
-  $strongarm->value = 'admin/structure/context';
+  $strongarm->value = '';
   $export['rh_node_redirect_block'] = $strongarm;
 
   $strongarm = new stdClass();
