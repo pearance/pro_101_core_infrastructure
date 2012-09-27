@@ -458,7 +458,9 @@ function pro_101_core_infrastructure_user_default_permissions() {
   // Exported permission: exclude from message filtering.
   $permissions['exclude from message filtering'] = array(
     'name' => 'exclude from message filtering',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+    ),
     'module' => 'disable_messages',
   );
 
@@ -494,7 +496,6 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'name' => 'view error messages',
     'roles' => array(
       0 => 'developer',
-      1 => 'support',
     ),
     'module' => 'disable_messages',
   );

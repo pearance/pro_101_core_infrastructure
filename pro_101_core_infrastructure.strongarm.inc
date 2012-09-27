@@ -672,7 +672,8 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'disable_messages_ignore_patterns';
-  $strongarm->value = 'Testimonial .*? has been created.';
+  $strongarm->value = 'Testimonial .*? has been created.
+The block you just created is now available on the .*?.';
   $export['disable_messages_ignore_patterns'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -681,6 +682,7 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm->name = 'disable_messages_ignore_regex';
   $strongarm->value = array(
     0 => '/^Testimonial .*? has been created.$/i',
+    1 => '/^The block you just created is now available on the .*?.$/i',
   );
   $export['disable_messages_ignore_regex'] = $strongarm;
 
@@ -1240,7 +1242,7 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_block_pattern';
-  $strongarm->value = '[node:title]';
+  $strongarm->value = 'block/[node:title]';
   $export['pathauto_node_block_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
