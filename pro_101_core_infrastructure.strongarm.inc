@@ -587,6 +587,48 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'diff_enable_revisions_page_node_block';
+  $strongarm->value = 1;
+  $export['diff_enable_revisions_page_node_block'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_show_diff_inline_node_block';
+  $strongarm->value = 0;
+  $export['diff_show_diff_inline_node_block'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_show_preview_changes_node_block';
+  $strongarm->value = 0;
+  $export['diff_show_preview_changes_node_block'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_inline_node_block';
+  $strongarm->value = 'diff_complete';
+  $export['diff_view_mode_inline_node_block'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_preview_node_block';
+  $strongarm->value = 'diff_complete';
+  $export['diff_view_mode_preview_node_block'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_standard_node_block';
+  $strongarm->value = 1;
+  $export['diff_view_mode_standard_node_block'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'disable_messages_debug_visible_div';
   $strongarm->value = 0;
   $export['disable_messages_debug_visible_div'] = $strongarm;
@@ -1156,7 +1198,7 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_block';
-  $strongarm->value = '0';
+  $strongarm->value = '1';
   $export['node_preview_block'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1235,6 +1277,13 @@ if (module_exists(\'search\') && user_access(\'search content\')) {
   $strongarm->name = 'rss_permissions_feed_icon_theme';
   $strongarm->value = 'theme_feed_icon';
   $export['rss_permissions_feed_icon_theme'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'savedraft_block';
+  $strongarm->value = '0';
+  $export['savedraft_block'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
