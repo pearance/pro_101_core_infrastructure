@@ -53,6 +53,7 @@ dependencies[] = rules
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = taxonomy_csv
+dependencies[] = title
 dependencies[] = token
 dependencies[] = views
 dependencies[] = views_bulk_operations
