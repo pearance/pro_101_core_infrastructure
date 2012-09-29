@@ -15,9 +15,10 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'name' => 'access admin theme',
     'roles' => array(
       0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
-      3 => 'support',
+      1 => 'authenticated user',
+      2 => 'developer',
+      3 => 'professional',
+      4 => 'support',
     ),
     'module' => 'admin_theme',
   );
@@ -157,7 +158,6 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'name' => 'administer actions',
     'roles' => array(
       0 => 'developer',
-      1 => 'support',
     ),
     'module' => 'system',
   );
@@ -547,9 +547,10 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'name' => 'view the administration theme',
     'roles' => array(
       0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
-      3 => 'support',
+      1 => 'authenticated user',
+      2 => 'developer',
+      3 => 'professional',
+      4 => 'support',
     ),
     'module' => 'system',
   );
