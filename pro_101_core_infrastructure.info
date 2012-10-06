@@ -43,7 +43,6 @@ dependencies[] = overlay
 dependencies[] = overlay_paths
 dependencies[] = overlay_paths_example
 dependencies[] = pathologic
-dependencies[] = php
 dependencies[] = rabbit_hole
 dependencies[] = rdf
 dependencies[] = rh_node
