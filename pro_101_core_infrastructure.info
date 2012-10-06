@@ -14,7 +14,6 @@ dependencies[] = boost
 dependencies[] = collapse_text
 dependencies[] = contactinfo
 dependencies[] = context
-dependencies[] = context_layouts
 dependencies[] = contextual
 dependencies[] = customerror
 dependencies[] = defaultcontent
