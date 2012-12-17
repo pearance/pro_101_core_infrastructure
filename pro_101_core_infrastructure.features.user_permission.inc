@@ -153,6 +153,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'rss_permissions',
   );
 
+  // Exported permission: access the block administration page.
+  $permissions['access the block administration page'] = array(
+    'name' => 'access the block administration page',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'block_access',
+  );
+
   // Exported permission: administer actions.
   $permissions['administer actions'] = array(
     'name' => 'administer actions',
@@ -160,6 +169,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'system',
+  );
+
+  // Exported permission: administer block access settings.
+  $permissions['administer block access settings'] = array(
+    'name' => 'administer block access settings',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'block_access',
   );
 
   // Exported permission: administer blocks.
@@ -397,6 +415,104 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'rules',
   );
 
+  // Exported permission: configure all block body fields.
+  $permissions['configure all block body fields'] = array(
+    'name' => 'configure all block body fields',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'block_access',
+  );
+
+  // Exported permission: configure all block descriptions.
+  $permissions['configure all block descriptions'] = array(
+    'name' => 'configure all block descriptions',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'block_access',
+  );
+
+  // Exported permission: configure all block titles.
+  $permissions['configure all block titles'] = array(
+    'name' => 'configure all block titles',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'block_access',
+  );
+
+  // Exported permission: configure all blocks.
+  $permissions['configure all blocks'] = array(
+    'name' => 'configure all blocks',
+    'roles' => array(),
+    'module' => 'block_access',
+  );
+
+  // Exported permission: configure all content type visibility settings.
+  $permissions['configure all content type visibility settings'] = array(
+    'name' => 'configure all content type visibility settings',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'block_access',
+  );
+
+  // Exported permission: configure all language settings.
+  $permissions['configure all language settings'] = array(
+    'name' => 'configure all language settings',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'block_access',
+  );
+
+  // Exported permission: configure all page visibility settings.
+  $permissions['configure all page visibility settings'] = array(
+    'name' => 'configure all page visibility settings',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'block_access',
+  );
+
+  // Exported permission: configure all region settings.
+  $permissions['configure all region settings'] = array(
+    'name' => 'configure all region settings',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'block_access',
+  );
+
+  // Exported permission: configure all role visibility settings.
+  $permissions['configure all role visibility settings'] = array(
+    'name' => 'configure all role visibility settings',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'block_access',
+  );
+
+  // Exported permission: configure all user visibility settings.
+  $permissions['configure all user visibility settings'] = array(
+    'name' => 'configure all user visibility settings',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'block_access',
+  );
+
+  // Exported permission: configure all visibility settings.
+  $permissions['configure all visibility settings'] = array(
+    'name' => 'configure all visibility settings',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'block_access',
+  );
+
   // Exported permission: create block content.
   $permissions['create block content'] = array(
     'name' => 'create block content',
@@ -405,6 +521,24 @@ function pro_101_core_infrastructure_user_default_permissions() {
       1 => 'support',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: create blocks.
+  $permissions['create blocks'] = array(
+    'name' => 'create blocks',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'block_access',
+  );
+
+  // Exported permission: delete all blocks.
+  $permissions['delete all blocks'] = array(
+    'name' => 'delete all blocks',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'block_access',
   );
 
   // Exported permission: delete any block content.
@@ -435,6 +569,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: disable all blocks.
+  $permissions['disable all blocks'] = array(
+    'name' => 'disable all blocks',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'block_access',
+  );
+
   // Exported permission: edit any block content.
   $permissions['edit any block content'] = array(
     'name' => 'edit any block content',
@@ -453,6 +596,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
       1 => 'support',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: enable all blocks.
+  $permissions['enable all blocks'] = array(
+    'name' => 'enable all blocks',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'block_access',
   );
 
   // Exported permission: exclude from message filtering.
@@ -482,6 +634,16 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'taxonomy_csv',
   );
 
+  // Exported permission: move all blocks.
+  $permissions['move all blocks'] = array(
+    'name' => 'move all blocks',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'block_access',
+  );
+
   // Exported permission: revert revisions.
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
@@ -492,6 +654,20 @@ function pro_101_core_infrastructure_user_default_permissions() {
       3 => 'support',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: view all blocks.
+  $permissions['view all blocks'] = array(
+    'name' => 'view all blocks',
+    'roles' => array(
+      0 => 'anonymous user',
+      1 => 'assistant',
+      2 => 'authenticated user',
+      3 => 'developer',
+      4 => 'professional',
+      5 => 'support',
+    ),
+    'module' => 'block_access',
   );
 
   // Exported permission: view error messages.
