@@ -607,6 +607,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'block_access',
   );
 
+  // Exported permission: enter block revision log entry.
+  $permissions['enter block revision log entry'] = array(
+    'name' => 'enter block revision log entry',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'override_node_options',
+  );
+
   // Exported permission: exclude from message filtering.
   $permissions['exclude from message filtering'] = array(
     'name' => 'exclude from message filtering',
@@ -642,6 +651,60 @@ function pro_101_core_infrastructure_user_default_permissions() {
       1 => 'support',
     ),
     'module' => 'block_access',
+  );
+
+  // Exported permission: override block authored by option.
+  $permissions['override block authored by option'] = array(
+    'name' => 'override block authored by option',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: override block authored on option.
+  $permissions['override block authored on option'] = array(
+    'name' => 'override block authored on option',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: override block promote to front page option.
+  $permissions['override block promote to front page option'] = array(
+    'name' => 'override block promote to front page option',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: override block published option.
+  $permissions['override block published option'] = array(
+    'name' => 'override block published option',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: override block revision option.
+  $permissions['override block revision option'] = array(
+    'name' => 'override block revision option',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: override block sticky option.
+  $permissions['override block sticky option'] = array(
+    'name' => 'override block sticky option',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'override_node_options',
   );
 
   // Exported permission: revert revisions.
