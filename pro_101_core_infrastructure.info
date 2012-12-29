@@ -44,7 +44,6 @@ dependencies[] = overlay
 dependencies[] = overlay_paths
 dependencies[] = overlay_paths_example
 dependencies[] = override_node_options
-dependencies[] = pathologic
 dependencies[] = rabbit_hole
 dependencies[] = rdf
 dependencies[] = rh_node
