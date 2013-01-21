@@ -822,20 +822,23 @@ The block you just created is now available on the .*?.';
       'search_result' => array(
         'custom_settings' => FALSE,
       ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '10',
+          'weight' => '1',
         ),
         'title' => array(
-          'weight' => '-5',
+          'weight' => '0',
         ),
         'redirect' => array(
-          'weight' => '30',
+          'weight' => '3',
         ),
         'path' => array(
-          'weight' => '30',
+          'weight' => '2',
         ),
       ),
       'display' => array(),
@@ -1152,12 +1155,12 @@ The block you just created is now available on the .*?.';
       'region' => 'right',
       'weight' => '0',
       'has_required' => FALSE,
-      'title' => 'Save',
+      'title' => 'Publish',
       'hidden' => 0,
     ),
     'body' => array(
       'region' => 'main',
-      'weight' => '1',
+      'weight' => '2',
       'has_required' => FALSE,
       'title' => 'Body',
       'hidden' => 0,
@@ -1174,6 +1177,13 @@ The block you just created is now available on the .*?.';
       'weight' => '1',
       'has_required' => FALSE,
       'title' => NULL,
+      'hidden' => 0,
+    ),
+    'field_block_image' => array(
+      'region' => 'main',
+      'weight' => '1',
+      'has_required' => FALSE,
+      'title' => 'Block Image',
       'hidden' => 0,
     ),
   );
