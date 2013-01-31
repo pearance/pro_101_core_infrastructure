@@ -1167,7 +1167,7 @@ The block you just created is now available on the .*?.';
     ),
     'field_create_info' => array(
       'region' => 'right',
-      'weight' => '2',
+      'weight' => '3',
       'has_required' => FALSE,
       'title' => 'Create Info',
       'hidden' => 0,
@@ -1184,6 +1184,13 @@ The block you just created is now available on the .*?.';
       'weight' => '1',
       'has_required' => FALSE,
       'title' => 'Block Image',
+      'hidden' => 0,
+    ),
+    'field_map_address' => array(
+      'region' => 'right',
+      'weight' => '2',
+      'has_required' => FALSE,
+      'title' => 'Map Address',
       'hidden' => 0,
     ),
   );

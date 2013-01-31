@@ -308,11 +308,11 @@ function pro_101_core_infrastructure_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
-            'image_style' => '',
+            'image_style' => 'fluid-image',
           ),
           'type' => 'image',
           'weight' => '0',
@@ -438,12 +438,93 @@ function pro_101_core_infrastructure_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-block-field_map_address'.
+  $fields['node-block-field_map_address'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_map_address',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'block',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'Enter address to be mapped in a single line (Ex. 123 Main Street, Suite 123, City, State 12345).',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'simple_gmap',
+          'settings' => array(
+            'iframe_height' => '300',
+            'iframe_width' => '400',
+            'include_link' => 1,
+            'include_map' => 1,
+            'include_text' => 0,
+            'information_bubble' => 0,
+            'langcode' => 'en',
+            'link_text' => '',
+            'map_type' => 'm',
+            'zoom_level' => '16',
+          ),
+          'type' => 'simple_gmap',
+          'weight' => '3',
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_map_address',
+      'label' => 'Map Address',
+      'required' => 0,
+      'settings' => array(
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'maxlength_js' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'size' => '60',
+        ),
+        'type' => 'text_textfield',
+        'weight' => '9',
+      ),
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Alt Text');
   t('Block Image');
   t('Body');
   t('Create Info');
+  t('Enter address to be mapped in a single line (Ex. 123 Main Street, Suite 123, City, State 12345).');
+  t('Map Address');
   t('Title Text');
   t('Title text attribute');
 
