@@ -51,7 +51,7 @@ user/*/content_lock
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'admin_theme_path_disallow';
-  $strongarm->value = '';
+  $strongarm->value = 'add/testimonial';
   $export['admin_theme_path_disallow'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -452,36 +452,23 @@ user/*/content_lock
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'customerror_403';
-  $strongarm->value = '<?php global $user; ?>
-<?php if ($user->uid): ?>  
-  <p>Sorry <?php print $user->name; ?>, you don\'t have permission to view the page you\'ve just tried to access.</p>
-  <p>If you feel that you have received this message in error, please 
-    <a href="contact">contact us</a> with specific details so that we may review your access to this web site.</p>
-  <p>Thanks</p>
-<?php else: ?>
-  <p>This page may be available to clients and registered users only. Please select from one of the other options available to you below.</p>
-  <ul>
-    <li><a href="/user/login?<?php print drupal_get_destination(); ?>">Login</a> to view this page</li>
-    <li>Use the <a href="search">search</a> facility</li>
-    <li>Go to the <a href="/">home page</a></li>
-    <li>Go to the <a href="sitemap">site map</a></li>
-  </ul>
-<?php //print drupal_get_form(\'user_login\'); ?>
-<?php endif; ?>';
+  $strongarm->value = '<div id="customerror-content">
+<p>Sorry you don\'t have permission to view this page. If you are a client or registered user <a href="/user/login"><u>logging in</u></a> may permit access.</p>
+</div>';
   $export['customerror_403'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'customerror_403_php';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['customerror_403_php'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'customerror_403_theme';
-  $strongarm->value = 'prostarter';
+  $strongarm->value = '0';
   $export['customerror_403_theme'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -495,37 +482,24 @@ user/*/content_lock
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'customerror_404';
-  $strongarm->value = '<p>Sorry, no content was found at the requested path - it\'s possible that you\'ve requested this page in error.</p>
-
-<p>Use the search form below, or go to the <a href="/">home page.</a></p>
-
-<?php
-// check that the search module exists and the user has permission to hit the form
-if (module_exists(\'search\') && user_access(\'search content\')) {
-  // cool! - customerror doesn\'t trash the page request and the full path is available
-  $path = $_REQUEST[\'destination\'];
-  // bin anything that\'s not alphanumeric and replace with spaces
-  $keys = strtolower(preg_replace(\'/[^a-zA-Z0-9-]+/\', \' \', $path));
-
-  // retrieve the search form using the data we\'ve pull from the request
-  // note that we can override the label for the search terms field here too
-  print drupal_get_form(\'search_form\', NULL, $keys, \'node\', \'Search terms\');
-}
-?>';
+  $strongarm->value = '<div id="customerror-content">
+<h2>Page not Found</h2>
+<p>It\'s possible that you\'ve requested this page in error. Please try one of the links above.</p>
+</div>';
   $export['customerror_404'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'customerror_404_php';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['customerror_404_php'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'customerror_404_theme';
-  $strongarm->value = 'prostarter';
+  $strongarm->value = '0';
   $export['customerror_404_theme'] = $strongarm;
 
   $strongarm = new stdClass();
