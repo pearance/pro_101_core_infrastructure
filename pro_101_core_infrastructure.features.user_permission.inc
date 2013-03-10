@@ -10,6 +10,25 @@
 function pro_101_core_infrastructure_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: Content Types.
+  $permissions['Content Types'] = array(
+    'name' => 'Content Types',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'config_perms',
+  );
+
+  // Exported permission: Manage Display.
+  $permissions['Manage Display'] = array(
+    'name' => 'Manage Display',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'config_perms',
+  );
+
   // Exported permission: access admin theme.
   $permissions['access admin theme'] = array(
     'name' => 'access admin theme',
@@ -219,6 +238,15 @@ function pro_101_core_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'distributed_blocks',
+  );
+
+  // Exported permission: administer field collections.
+  $permissions['administer field collections'] = array(
+    'name' => 'administer field collections',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'field_collection',
   );
 
   // Exported permission: administer field permissions.
