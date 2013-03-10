@@ -5,6 +5,20 @@
  */
 
 /**
+ * Implements hook_ccl_features_preset().
+ */
+function pro_101_core_infrastructure_ccl_features_preset() {
+  return array(
+    'Manage Display' => array(
+      'type' => 'node',
+      'title' => 'Manage Display',
+      'link' => 'admin/structure/types/manage/webform/display',
+      'options' => 'a:6:{s:12:"advanced_css";s:0:"";s:14:"advanced_query";s:0:"";s:15:"advanced_target";s:7:"default";s:12:"node_options";s:2:"ct";s:9:"node_type";s:7:"webform";s:7:"node_id";s:0:"";}',
+    ),
+  );
+}
+
+/**
  * Implements hook_ctools_plugin_api().
  */
 function pro_101_core_infrastructure_ctools_plugin_api() {
