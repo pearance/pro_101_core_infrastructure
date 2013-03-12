@@ -183,6 +183,7 @@ features[variable][] = boost_enabled_application/javascript
 features[variable][] = boost_enabled_application/rss
 features[variable][] = boost_enabled_application/rss+xml
 features[variable][] = boost_enabled_application/xml
+features[variable][] = boost_enabled_image/jpeg
 features[variable][] = boost_enabled_text/css
 features[variable][] = boost_enabled_text/html
 features[variable][] = boost_enabled_text/javascript
