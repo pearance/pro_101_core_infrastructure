@@ -886,16 +886,28 @@ The block you just created is now available on the .*?.';
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'jquery_update_compression_type';
-  $strongarm->value = 'min';
-  $export['jquery_update_compression_type'] = $strongarm;
+  $strongarm->name = 'jqmulti_libraries';
+  $strongarm->value = array(
+    'json2' => 0,
+    'ckeditor' => 0,
+    'phpQuery' => 0,
+    'jail' => 0,
+    'jquery.easing' => 0,
+    'jquery.cycle' => 0,
+    'timeago' => 0,
+    'wordstream' => 0,
+    'webkitresize' => 0,
+    'AlchemyAPI' => 0,
+    'colorbox' => 0,
+  );
+  $export['jqmulti_libraries'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'jquery_update_jquery_cdn';
-  $strongarm->value = 'google';
-  $export['jquery_update_jquery_cdn'] = $strongarm;
+  $strongarm->name = 'jqmulti_load_always';
+  $strongarm->value = 0;
+  $export['jqmulti_load_always'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
