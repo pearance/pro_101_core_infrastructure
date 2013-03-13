@@ -320,3 +320,4 @@ features[variable][] = site_403
 features[variable][] = site_404
 features[variable][] = site_default_country
 features[variable][] = workbench_moderation_default_state_block
+features[views_view][] = site_feed
