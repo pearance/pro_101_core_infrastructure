@@ -221,15 +221,6 @@ function pro_101_core_infrastructure_user_default_permissions() {
     'module' => 'distributed_blocks',
   );
 
-  // Exported permission: administer field collections.
-  $permissions['administer field collections'] = array(
-    'name' => 'administer field collections',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'field_collection',
-  );
-
   // Exported permission: administer field permissions.
   $permissions['administer field permissions'] = array(
     'name' => 'administer field permissions',
