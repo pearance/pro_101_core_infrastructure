@@ -347,9 +347,9 @@ function pro_101_core_infrastructure_field_default_fields() {
           'allowed_types' => array(
             'audio' => 0,
             'document' => 0,
+            0 => 0,
             'image' => 'image',
             'video' => 0,
-            0 => 0,
           ),
           'browser_plugins' => array(
             'media_default--media_browser_1' => 'media_default--media_browser_1',
@@ -413,7 +413,7 @@ function pro_101_core_infrastructure_field_default_fields() {
       'settings' => array(
         'markup' => array(
           'format' => 'plain_text',
-          'value' => 'For more info click here.
+          'value' => '<p>For more info click here.</p>
 ',
         ),
       ),
